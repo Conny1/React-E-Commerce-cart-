@@ -1,0 +1,27 @@
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(244, 217, 186);
+    height: 20vh;
+    position: fixed;
+    width: 100%;
+    margin-top: -9px;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    padding: 5px;
+    transition-duration: 1s;
+}
+a:hover{
+    background-color:rgb(251, 242, 233) ;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+a.active{
+    text-decoration: underline;
+}
