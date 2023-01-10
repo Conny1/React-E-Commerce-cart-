@@ -1,0 +1,20 @@
+.check{
+    width: 40%;
+    border: 1px solid gray;
+    display: flex;
+    gap: 5px;
+}
+.check img{
+    width: 50%;
+
+}
+.CheckproductInfo{
+    display: flex;
+    flex-direction: column;
+}
+button{
+    background-color:rgb(244, 217, 186) ;
+    border: none;
+    height: 30px;
+    margin: 5px;
+}

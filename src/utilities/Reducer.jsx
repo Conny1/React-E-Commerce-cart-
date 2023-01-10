@@ -77,10 +77,16 @@ export const INITIAL_STATE ={
     switch(action.type){
         case "ADD":
             return{
-                
+                ...state,
+                cart:[...state.cart, action.payload]
+            
             }
-        case "Delete":
-            return{}
+        
+        case "DELETE":
+            return{
+                ...state,
+                cart:state.cart.filter((item)=>item.name !== action.payload)
+            }
         case "SORT_BY_PRICE":
             return{}
         default:
