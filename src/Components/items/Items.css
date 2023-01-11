@@ -21,8 +21,15 @@ button{
 @media screen and (max-width:1163px) {
     .item{
         width:80% ;
+        
      }
     
 }
-
-/* *{outline: 1px solid red;} */
+@media screen and (max-width:807px) {
+   .item{
+    width: 90%;
+    align-self: center;
+   }
+   
+       
+   }
