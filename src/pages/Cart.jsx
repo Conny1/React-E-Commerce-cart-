@@ -6,7 +6,7 @@ import './styles.css'
 
 const Cart = () => {
   const { State} = useContext(ContextCreated)
-  console.log(State.cart)
+  
   return (
     <div className='cart' >
       {
