@@ -71,7 +71,8 @@ const products =[
 
 export const INITIAL_STATE ={
     home: products,
-    cart: []
+    cart: [],
+    incart:false
 }
  export function ReducerFunction( state, action ){
     switch(action.type){
@@ -81,6 +82,10 @@ export const INITIAL_STATE ={
                 cart:[...state.cart, action.payload]
             
             }
+        case "INCART":
+            return{
+                
+            }
         
         case "DELETE":
             return{
@@ -88,7 +93,13 @@ export const INITIAL_STATE ={
                 cart:state.cart.filter((item)=>item.name !== action.payload)
             }
         case "SORT_BY_PRICE":
-            return{}
+            return{
+                ...state,
+                home:[...state.home.filter((item)=> item.price< action.payload )]
+               
+            
+    
+            }
         default:
              return state
     }

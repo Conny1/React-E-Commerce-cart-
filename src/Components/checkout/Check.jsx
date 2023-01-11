@@ -1,9 +1,10 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import './check.css'
 import {ContextCreated} from  '../../utilities/ContextApi'
 
 const Check = ({name,price,image,specs}) => {
-    const { dispatch} = useContext(ContextCreated)
+    const {  dispatch} = useContext(ContextCreated)
+   
     const deletItem=(n)=>{
 
         dispatch( {type:'DELETE', payload:n} )

@@ -3,5 +3,49 @@
     gap: 20px;
     flex-wrap: wrap;
     margin-top: 150px;
+    position: relative;
    
+}
+.filter{
+    position: absolute;
+    right: 0;
+    width: 15%;
+    border: 1px solid grey;
+    background-color: rgb(244, 217, 186);
+}
+
+.filter input{
+    width: 70%;
+}
+.filter button{
+    background-color:rgb(251, 242, 233) ;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    
+}
+
+@media screen and (max-width:1163px) {
+    .Home,.cart{
+        flex-direction: column;  
+    }
+.filter{
+    position: fixed;
+}
+
+    
+}
+@media screen and (max-width:807px) {
+ .Home{
+    margin-bottom: 500px;
+    flex-direction: column-reverse;
+ }  
+.filter{
+    width: 100%;
+    padding: 5px;
+    position: relative;
+      
+}
+
+    
 }
